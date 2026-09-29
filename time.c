@@ -199,6 +199,8 @@ int main(void)
     int minutes_tens = minute / 10;
 
     // second calculate
+    int second_ones = second % 10;
+    int second_tens = second / 10;
 
     switch (hour_tens)
     {
@@ -306,7 +308,7 @@ int main(void)
                     putchar(five[i][j]);
                 }
                 break;
-            
+
             case 0:
                 for (int j = 0; j < 3; j++)
                 {
@@ -375,9 +377,112 @@ int main(void)
                 {
                     putchar(zero[i][j]);
                 }
-                    break;
+                break;
             }
+            putchar(':');
+            switch (second_tens)
+            {
+            case 1:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(one[i][j]);
+                }
+                break;
+            case 2:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(two[i][j]);
+                }
+                break;
+            case 3:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(three[i][j]);
+                }
+                break;
+            case 4:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(four[i][j]);
+                }
+                break;
+            case 5:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(five[i][j]);
+                }
+                break;
 
+            case 0:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(zero[i][j]);
+                }
+                break;
+            }
+            switch (second_ones)
+            {
+            case 1:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(one[i][j]);
+                }
+                break;
+            case 2:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(two[i][j]);
+                }
+                break;
+            case 3:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(three[i][j]);
+                }
+                break;
+            case 4:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(four[i][j]);
+                }
+                break;
+            case 5:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(five[i][j]);
+                }
+                break;
+            case 6:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(six[i][j]);
+                }
+                break;
+            case 7:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(seven[i][j]);
+                }
+                break;
+            case 8:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(eight[i][j]);
+                }
+                break;
+            case 9:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(nine[i][j]);
+                }
+                break;
+            case 0:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(zero[i][j]);
+                }
+                break;
+            }
             printf("\n");
         }
         break;
@@ -396,61 +501,61 @@ int main(void)
                 {
                     putchar(one[i][j]);
                 }
-                    break;
+                break;
             case 2:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(two[i][j]);
                 }
-                    break;
+                break;
             case 3:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(three[i][j]);
                 }
-                    break;
+                break;
             case 4:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(four[i][j]);
                 }
-                    break;
+                break;
             case 5:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(five[i][j]);
                 }
-                    break;
+                break;
             case 6:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(six[i][j]);
                 }
-                    break;
+                break;
             case 7:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(seven[i][j]);
                 }
-                    break;
+                break;
             case 8:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(eight[i][j]);
                 }
-                    break;
+                break;
             case 9:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(nine[i][j]);
                 }
-                    break;
+                break;
             case 0:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(zero[i][j]);
                 }
-                    break;
+                break;
             }
             putchar(':');
             switch (minutes_tens)
@@ -460,38 +565,38 @@ int main(void)
                 {
                     putchar(one[i][j]);
                 }
-                    break;
+                break;
             case 2:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(two[i][j]);
                 }
-                    break;
+                break;
             case 3:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(three[i][j]);
                 }
-                    break;
+                break;
             case 4:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(four[i][j]);
                 }
-                    break;
+                break;
             case 5:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(five[i][j]);
                 }
-                    break;
-            
+                break;
+
             case 0:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(zero[i][j]);
                 }
-                    break;
+                break;
             }
             switch (minutes_ones)
             {
@@ -500,64 +605,166 @@ int main(void)
                 {
                     putchar(one[i][j]);
                 }
-                    break;
+                break;
             case 2:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(two[i][j]);
                 }
-                    break;
+                break;
             case 3:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(three[i][j]);
                 }
-                    break;
+                break;
             case 4:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(four[i][j]);
                 }
-                    break;
+                break;
             case 5:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(five[i][j]);
                 }
-                    break;
+                break;
             case 6:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(six[i][j]);
                 }
-                    break;
+                break;
             case 7:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(seven[i][j]);
                 }
-                    break;
+                break;
             case 8:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(eight[i][j]);
                 }
-                    break;
+                break;
             case 9:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(nine[i][j]);
                 }
-                    break;
+                break;
             case 0:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(zero[i][j]);
                 }
-                    break;
+                break;
             }
             putchar(':');
+            switch (second_tens)
+            {
+            case 1:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(one[i][j]);
+                }
+                break;
+            case 2:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(two[i][j]);
+                }
+                break;
+            case 3:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(three[i][j]);
+                }
+                break;
+            case 4:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(four[i][j]);
+                }
+                break;
+            case 5:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(five[i][j]);
+                }
+                break;
 
+            case 0:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(zero[i][j]);
+                }
+                break;
+            }
+            switch (second_ones)
+            {
+            case 1:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(one[i][j]);
+                }
+                break;
+            case 2:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(two[i][j]);
+                }
+                break;
+            case 3:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(three[i][j]);
+                }
+                break;
+            case 4:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(four[i][j]);
+                }
+                break;
+            case 5:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(five[i][j]);
+                }
+                break;
+            case 6:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(six[i][j]);
+                }
+                break;
+            case 7:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(seven[i][j]);
+                }
+                break;
+            case 8:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(eight[i][j]);
+                }
+                break;
+            case 9:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(nine[i][j]);
+                }
+                break;
+            case 0:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(zero[i][j]);
+                }
+                break;
+            }
 
             printf("\n");
         }
@@ -577,19 +784,19 @@ int main(void)
                 {
                     putchar(one[i][j]);
                 }
-                    break;
+                break;
             case 2:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(two[i][j]);
                 }
-                    break;
+                break;
             case 3:
                 for (int j = 0; j < 3; j++)
                 {
                     putchar(three[i][j]);
                 }
-                    break;
+                break;
             case 4:
                 for (int j = 0; j < 3; j++)
                 {
@@ -666,7 +873,7 @@ int main(void)
                     putchar(five[i][j]);
                 }
                 break;
-            
+
             case 0:
                 for (int j = 0; j < 3; j++)
                 {
@@ -737,7 +944,110 @@ int main(void)
                 }
                 break;
             }
+            putchar(':');
+            switch (second_tens)
+            {
+            case 1:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(one[i][j]);
+                }
+                break;
+            case 2:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(two[i][j]);
+                }
+                break;
+            case 3:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(three[i][j]);
+                }
+                break;
+            case 4:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(four[i][j]);
+                }
+                break;
+            case 5:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(five[i][j]);
+                }
+                break;
 
+            case 0:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(zero[i][j]);
+                }
+                break;
+            }
+            switch (second_ones)
+            {
+            case 1:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(one[i][j]);
+                }
+                break;
+            case 2:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(two[i][j]);
+                }
+                break;
+            case 3:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(three[i][j]);
+                }
+                break;
+            case 4:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(four[i][j]);
+                }
+                break;
+            case 5:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(five[i][j]);
+                }
+                break;
+            case 6:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(six[i][j]);
+                }
+                break;
+            case 7:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(seven[i][j]);
+                }
+                break;
+            case 8:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(eight[i][j]);
+                }
+                break;
+            case 9:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(nine[i][j]);
+                }
+                break;
+            case 0:
+                for (int j = 0; j < 3; j++)
+                {
+                    putchar(zero[i][j]);
+                }
+                break;
+            }
             printf("\n");
         }
         break;
