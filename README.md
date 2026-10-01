@@ -1,4 +1,4 @@
-![alt text](https://github.com/HaadiRezaei/time_in_terminal/screenshot.png?raw=true)
+![screenshot](https://github.com/HaadiRezaei/time_in_terminal/blob/main/screenshot.png)
 
 time in terminal
 
